@@ -1,0 +1,23 @@
+$ use animalia;
+
+$ db.createUser({user:"sarahjul", pwd:"1234", roles:["readWrite", "dbAdmin"]});
+
+$ db.createCollection('vertebrata');
+
+$ db.vertebrata.insert([
+{nama:"Kanguru",latin:"Macropus rufus",famili:"Macropodidae"},
+{nama:"Kambing",latin:"Ovis aries",famili:"Bovidae"},
+{nama:"Kijang",latin:"Odocoileus virginiana",famili:"Cervidae"},
+{nama:"Koala",latin:"Phascolarctos cinereus",famili:"Phascolarctidae"},
+{nama:"Kuda",latin:"Equus caballus",famili:"Equidae"},
+]);
+
+$ db.createCollection('invertebrata');
+
+$ db.invertebrata.insert([
+{nama:"Laba-laba", latin:"Salcitus scenicus", famili:"Araneae"},
+{nama:"Lalat", latin:"Tabanus sp", famili:"Diptera"},
+{nama:"Lebah", latin:"Polistes sp", famili:"Anthophila"},
+{nama:"Lipan", latin:"Scolopendra gigantea", famili:"Scolopendra"},
+{nama:"Lobster", latin:"Cherax quadricarinatus", famili:"Nephropidae"},
+]);

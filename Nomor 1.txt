@@ -1,0 +1,31 @@
+$ CREATE database plantae;
+
+$ USE plantae;
+
+$ CREATE TABLE monocotyledon (
+Nama VARCHAR(30) NOT NULL,
+Latin VARCHAR(30) NOT NULL,
+Famili VARCHAR(30) NOT NULL
+);
+
+$ INSERT INTO monocotyledon VALUES
+('Jagung','Zea mays','Gramineae'),
+('Kelapa','Cocos nucifera ','Arecaceae'),
+('Pisang','Musa sp','Musaceae'),
+('Tebu','Saccharum sp','Poaceae'),
+('Vanili','Vanilla Planifolia','Orchidaceae')
+;
+
+$ CREATE TABLE Dicotyledon (
+Nama VARCHAR(30) NOT NULL,
+Latin VARCHAR(30) NOT NULL,
+Famili VARCHAR(30) NOT NULL
+);
+
+$ INSERT INTO dicotyledon VALUES
+('Cabe','Capsicum frutescens','Asteridae'),
+('Jambu','Psidium guajava','Myrtaceae'),
+('Kakao','Theobroma cacao','Theobroma'),
+('Karet','Hevea brasiliensis','Hevea'),
+('Singkong','Manihot utilissima','Euphorbiaceae')
+;
